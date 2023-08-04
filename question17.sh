@@ -1,16 +1,15 @@
-git branch branch1
-git branch branch2
-cd dir3
-touch bar_copy
-git add .
-git commit -m "added bar_copy"
-git checkout branch1
-mv dir1/dir2/foo dir1/foo
-touch newfile1
-git add .
-git commit -m "modified for branch1"
-git checkout branch2
-mv dir1/dir2/foo dir1/dir2/foo_modified
-mv dir3/bar dir1/dir3/newfile2
-git add .
-git commit -m "modified for branch2"
+# Clone the repository.
+#git clone https://github.com/ian-knight-uofa/git-practice-03.git
+
+# Create the branches branch1 and branch2.
+git checkout -b branch1
+git checkout -b branch2
+
+# Add, move, remove, and modify files to match the configurations shown above.
+echo "This is a new file" > newfile1
+git add newfile1
+git commit -m "Added newfile1"
+echo "This is a modified foo file" > dir1/dir2/foo
+echo "This is a new file" > dir3/newfile2
+git add newfile2
+git commit -m "Modified foo file and added newfile2"
