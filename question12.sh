@@ -1,3 +1,4 @@
 git checkout branch2
-git add -a
-git commit -m "modified file4"
+git stash pop
+git add file4
+git commit -m "Restored and committed uncommitted changes"
