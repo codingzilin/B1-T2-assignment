@@ -18,3 +18,24 @@ git commit -m "Removed dir2/foo and added newfile1"
 git mv dir2/foo dir1/foo_modified
 git add newfile2
 git commit -m "Moved dir2/foo to dir1/foo_modified and added newfile2"
+
+# Check the status of the branches
+git status
+
+# Switch to the main branch
+git checkout main
+
+# Check the status of the main branch
+git status
+
+# Switch to the branch1 branch
+git checkout branch1
+
+# Check the status of the branch1 branch
+git status
+
+# Switch to the branch2 branch
+git checkout branch2
+
+# Check the status of the branch2 branch
+git status
