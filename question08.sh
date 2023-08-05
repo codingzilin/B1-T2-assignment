@@ -3,7 +3,9 @@ mkdir dir2
 
 # Move all text files to dir2
 for file in *.txt; do
-  mv "$file" dir2
+  if [ -f "$file" ]; then
+    mv "$file" dir2
+  fi
 done
 
 # Stage the changes
