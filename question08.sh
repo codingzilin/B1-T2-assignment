@@ -1,8 +1,13 @@
+# Create the directory dir2
 mkdir dir2
-mv *.txt dir2/
 
-# Stage the changes (add the moved files)
-git add dir2/*.txt
+# Move all text files to dir2
+for file in *.txt; do
+  mv "$file" dir2
+done
+
+# Stage the changes
+git add dir2
 
 # Commit the changes
-git commit -m "Move text files to dir2"
+git commit -m "Moved all text files to dir2"
